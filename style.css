@@ -96,6 +96,12 @@ body {
   text-align: center;
   text-decoration: none;
 }
+.active {
+  transform: translateX(30px);
+}
+.open .active {
+  transform: translateX(10px);
+}
 .icon {
   display: block;
   min-width: 55px;
@@ -125,7 +131,7 @@ body {
   color: var(--color-tertiary);
   background: var(--clr);
 }
-.active::before .icon {
+.active .icon::before {
   opacity: 0.5;
 }
 .text {
