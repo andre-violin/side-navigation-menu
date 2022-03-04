@@ -121,11 +121,11 @@ body {
   opacity: 0;
   transition: 0.5s;
 }
-.menu-item .active {
+.active .icon {
   color: var(--color-tertiary);
   background: var(--clr);
 }
-.menu-item .active::before {
+.active::before .icon {
   opacity: 0.5;
 }
 .text {
@@ -145,4 +145,8 @@ body {
 .open .text {
   opacity: 1;
   visibility: visible;
+}
+
+.active .text {
+  color: var(--clr);
 }

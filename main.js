@@ -3,11 +3,11 @@ const navigation = document.querySelector(".navigation");
 menuToggle.onclick = function () {
   navigation.classList.toggle("open");
 };
-const menuItemIcon = document.querySelectorAll(".icon");
+const menuItem = document.querySelectorAll(".menu-item");
 function activeLink() {
-  menuItemIcon.forEach((item) => {
+  menuItem.forEach((item) => {
     item.classList.remove("active");
     this.classList.add("active");
   });
 }
-menuItemIcon.forEach((item) => item.addEventListener("click", activeLink));
+menuItem.forEach((item) => item.addEventListener("click", activeLink));
